@@ -12,7 +12,11 @@ const About = () => {
             <h1 className={styles.title}>
             Welcome to <a href="#">About!</a>
             </h1>
-            </main>
+            <p className={styles.card}>
+                This is a place that you can learn about me and what I do!
+                There probably won't be much here for now but it should grow!
+            </p>
+        </main>
             
         <footer className={styles.footer}>
             <a
