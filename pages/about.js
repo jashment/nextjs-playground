@@ -48,7 +48,7 @@ const About = () => {
                         <br />
                         <h6>Deployed on Heroku.</h6>
                     </a>
-                    <a className={styles.card} href="https://obscure-plateau-74859.herokuapp.com/">
+                    <a className={styles.card} href="https://elastic-heisenberg-746596.netlify.app/">
                         <h3>Star Wars Guide</h3>
                         Vue app using the SWAPI api.
                         Made with VueJS and Vuetify.
