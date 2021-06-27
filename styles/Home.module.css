@@ -110,6 +110,35 @@
   line-height: 1.5;
 }
 
+.input {
+  border-color: #0070f3;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.link {
+  color: #0070f3;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: gray;
+}
+
 .logo {
   height: 1em;
 }

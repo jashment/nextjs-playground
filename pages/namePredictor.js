@@ -14,9 +14,8 @@ const predictor = () => {
     }
 
     const makePrediction = async () => {
-        console.log('input', input)
-        // await setPrediction(agify(input))
-        await console.log('predicted', agify(input))
+        const age = await agify(input)
+        setPrediction(`${age} years old!`)
     }
 
     return (
@@ -26,12 +25,20 @@ const predictor = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            
+
             <main className={styles.main}>
-                <input onChange={(event) => handleInputChange(event)}></input>
-                <button onClick={() => makePrediction()}>Translate!</button>
+                <h1 className={styles.title}>
+                    Let us guess your age!
+                </h1>
+                <br />
+                <p className={styles.description}>This uses the <a className={styles.link} href="https://api.agify.io/">agify</a> api which takes a name and sends back a prediction in the form of a number.</p>
+                <p className={styles.description}>No API key necessary!</p>
+                <input className={styles.input} placeholder="Input Name Here" onChange={(event) => handleInputChange(event)}></input>
+                <button className={styles.btn} onClick={() => makePrediction()}>Translate!</button>
                 <br />
                 <h2>The Prediction Will Appear Here:</h2>
-                {/* <p>{prediction}</p> */}
+                <p>{prediction}</p>
             </main>
 
             <footer className={styles.footer}>
