@@ -22,7 +22,7 @@ const About = () => {
                         I am experienced in languages and frameworks such as ReactJS and NodeJS.
                     </p>
                 </div>
-                <h2>Visit some of my projects!</h2>
+                <h2>Here are some of my projects!</h2>
                 <div className={styles.grid}>
                     <a className={styles.card} href="https://youthful-raman-5b3e98.netlify.app/">
                         <h3>Visual Dashboard</h3>
