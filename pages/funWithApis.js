@@ -16,7 +16,7 @@ const funWithApis = () => {
 
                 <div className={styles.grid}>
                     <a className={styles.card} href="/namePredictor">
-                        <h3>Translation API</h3>
+                        <h3>Prediction API</h3>
                         Predict your age based on your name!
                         No API key necessary, just get predicting!
                         <br />
