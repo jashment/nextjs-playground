@@ -139,6 +139,12 @@
   color: gray;
 }
 
+.menuBtn {
+  background-color: white !important;
+  color: black;
+  font-size: 20px;
+}
+
 .logo {
   height: 1em;
 }

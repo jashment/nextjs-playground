@@ -10,7 +10,6 @@ const predictor = () => {
 
     const handleInputChange =  (event) => {
         event.preventDefault();
-        console.log(event.target.value)
         setInput(event.target.value)
     }
 
@@ -26,8 +25,6 @@ const predictor = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            
-
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Let us guess your age!
@@ -41,17 +38,6 @@ const predictor = () => {
                 <h2>The Prediction Will Appear Here:</h2>
                 <p>{prediction}</p>
             </main>
-
-            <footer className={styles.footer}>
-                <a
-                href="https://github.com/jashment"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Visit my Github{' '}
-                <img src="/GitHub-Mark-32px.png" alt="GitHub Logo" className={styles.logo} />
-                </a>
-            </footer>
         </div>
     )
 }

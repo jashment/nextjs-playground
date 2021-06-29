@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IconButton, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, useDisclosure } from "@chakra-ui/react"
+import styles from '../../styles/Home.module.css'
 
 const MainDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -8,7 +9,7 @@ const MainDrawer = () => {
 
   return (
     <>
-    <IconButton ref={btnRef} colorScheme="blue" onClick={onOpen} icon={<HamburgerIcon />}/>
+    <IconButton ref={btnRef} className={styles.menuBtn} onClick={onOpen} icon={<HamburgerIcon />}/>
       <Drawer
         isOpen={isOpen}
         placement="left"
@@ -21,9 +22,10 @@ const MainDrawer = () => {
           <DrawerHeader>Navigation</DrawerHeader>
 
           <DrawerBody>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
+            <a href="/"><p className={styles.card}>Home</p></a>
+            <a href="/about"><p className={styles.card}>About</p></a>
+            <a href="/funWithApis"><p className={styles.card}>Fun With APIs</p></a>
+            <a href="/dogImageFinder"><p className={styles.card}>Dog Image Finder</p></a>
           </DrawerBody>
 
         </DrawerContent>
