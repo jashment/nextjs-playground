@@ -25,7 +25,6 @@ const MainDrawer = () => {
             <a href="/"><p className={styles.card}>Home</p></a>
             <a href="/about"><p className={styles.card}>About</p></a>
             <a href="/funWithApis"><p className={styles.card}>Fun With APIs</p></a>
-            <a href="/dogImageFinder"><p className={styles.card}>Dog Image Finder</p></a>
           </DrawerBody>
 
         </DrawerContent>

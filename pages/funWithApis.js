@@ -24,6 +24,17 @@ const funWithApis = () => {
                         <h6>api.agify.io/</h6>
                     </a>
                 </div>
+
+                <div className={styles.grid}>
+                    <a className={styles.card} href="/dogImageFinder">
+                        <h3>Dog Finder API</h3>
+                        Find a random dog image on the internet!
+                        No API key necessary, just get finding!
+                        <br />
+                        <br />
+                        <h6>dog.ceo/dog-api/</h6>
+                    </a>
+                </div>
             </main>
         </div>
     )
