@@ -9,6 +9,7 @@ const dogImageFinder = () => {
     const [dog, setDog] = useState()
 
     const findDogImage = async () => {
+        setDog(null)
         const image = await dogImage()
         setDog(image)
     }
@@ -30,8 +31,8 @@ const dogImageFinder = () => {
                 <button className={styles.btn} onClick={() => findDogImage()}>Find!</button>
                 <br />
                 <h2>Your Dog Will Appear Here:</h2>
-                {dog && <Box boxSize="sm">
-                    <Image src={dog} alt="Doggies!" />
+                {dog && <Box className={styles.imageContainer} boxSize="sm">
+                    <Image className={styles.card} src={dog} alt="Doggies!" />
                 </Box>}
             </main>
         </div>
